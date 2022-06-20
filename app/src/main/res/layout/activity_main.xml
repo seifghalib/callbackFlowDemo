@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer Fund"
+        android:textSize = "30sp"
+        android:layout_gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/grb_r_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PayPal" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google Pay" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direct" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edt_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Amount:"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/transfer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer" />
+
+    <TextView
+        android:id="@+id/txt_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
